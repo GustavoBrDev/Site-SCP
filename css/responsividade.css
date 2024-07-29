@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+}
+
+.principal .artigo {
+    flex: 1 1 35%;
+}
+
+.barra-lateral .box {
+    flex: 1 1 55%;
+}
+
+@media ( max-width: 991px ){
+    .principal {
+        flex-direction: column;
+    }
+    .barra-lateral .box {
+        flex: 1 1 35%;
+    }
+    .barra-lateral {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media ( max-width: 576px ){
+    .principal, .barra-lateral {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+}

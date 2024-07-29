@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    align-items: center;
+}
+
+.icone {
+    display: grid;
+    grid-column: 1;
+}
+
+#logo-scp {
+    width: 8rem;
+}
+
+.cabecalho h1 {
+    display: grid;
+    grid-column: 2;
+}
+
+.menu {
+    background-color: #2b2626;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 1rem;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #fffb02;
+}
+
+.barra-lateral {
+    background-color: #2b2626;
+    color: #fff;
+    text-align: center;
+    flex: 1;
+}
+
+.barra-lateral ul {
+    list-style-type: none;
+}
+
+.rodape {
+    background-color: #141414;
+    color: #e90000;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.principal {
+    display: flex;
+    padding: 1rem;
+    flex: 3;
+}
+
+iframe {
+    border: #fff 1rem solid;
+    border-radius: 10%;
+    margin: 2rem;
+}
+
+.centro {
+    text-align: center;
+}
+
+.centro h1 {
+    font-size: 10rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.imagem-artigo {
+    width: 50vw;
+    height: 60vh;
+    border: #2b2626 1rem solid;
+    border-radius: 0.3rem;
+    margin: 2rem;
+}
+
+.conteudo p {
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.logo-mtf {
+    width: 8rem;
+    height: 8rem;
+}
+
+table {
+    text-align: center;
+    margin: 2rem;
+    max-width: 60vw;
+}
+
+th, td {
+    border: #000 0.3rem solid;
+}
+
+.simbolo {
+    width: 8rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.Superior {
+    display: grid;
+    grid-column: 1;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+}
+
+.titulo h2 {
+    display: grid;
+    grid-column: 2;
+}
+
+.aviso-conselho {
+    background-color: #000;
+    color: #fff;
+    margin: 2rem;
+}
+
+.aviso-conselho p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.video {
+    text-align: center;
+}
+
+.video iframe {
+    border-radius: 0.5rem;
+}
+
+@media ( max-width: 991px ){
+    .conteudo p {
+        font-size: 3rem;
+    }
+    .centro h1 {
+        font-size: 6rem;
+    }
+    table {
+        max-width: 40vw;
+    }
+    .aviso-conselho p {
+        font-size: 1rem;
+    }
+}
+
+@media ( max-width: 576px ){
+    .conteudo p {
+        font-size: 1rem;
+    }
+    .centro h1 {
+        font-size: 4rem;
+    }
+    table {
+        max-width: 20vw;
+    }
+    .aviso-conselho p {
+        font-size: 0.5rem;
+    }
+}
+

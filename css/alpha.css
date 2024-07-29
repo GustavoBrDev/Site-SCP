@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    align-items: center;
+}
+
+.icone {
+    display: grid;
+    grid-column: 1;
+}
+
+#logo-scp {
+    width: 8rem;
+}
+
+.cabecalho h1 {
+    display: grid;
+    grid-column: 2;
+}
+
+.menu {
+    background-color: #2b2626;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 1rem;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #fffb02;
+}
+
+.barra-lateral {
+    display: grid;
+    grid-column: 2;
+    background-color: #2b2626;
+    color: #fff;
+    text-align: center;
+}
+
+.barra-lateral ul {
+    list-style-type: none;
+}
+
+.rodape {
+    background-color: #141414;
+    color: #e90000;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.principal {
+   display: grid;
+   grid-template-columns: 90%, 10%;
+   min-width: 100vw;
+   min-height: 100vh;
+}
+
+iframe {
+    border: #fff 1rem solid;
+    border-radius: 10%;
+    margin: 2rem;
+}
+
+.centro {
+    text-align: center;
+}
+
+.centro h1 {
+    font-size: 10rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.imagem-artigo {
+    width: 100rem;
+    height: 50rem;
+    border: #2b2626 1rem solid;
+    border-radius: 0.3rem;
+    margin: 2rem;
+}
+
+.conteudo p {
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.logo-mtf {
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+}
+
+.logo-texto {
+    text-align:center;
+    margin: 1rem;
+}
+
+.simbolo {
+    width: 8rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.Superior {
+    display: grid;
+    grid-column: 1;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+}
+
+.titulo h2 {
+    display: grid;
+    grid-column: 2;
+}
+
+.Titulo {
+    display: grid;
+    grid-template-columns: 25%, 75%;
+}
+
+.Titulo h2 {
+    display: grid;
+    grid-column: 2;
+}
+
+.simbolo {
+    width: 4rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.imagem-classe {
+    display: grid;
+    grid-column: 1;
+}
+
+.arquivos {
+    background-color: #000;
+    text-align: center;
+    margin: 2rem;
+    border: #e90000 0.5rem solid;
+}
+
+
+
+
+
+
+
+

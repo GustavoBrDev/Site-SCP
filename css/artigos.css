@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    align-items: center;
+}
+
+.icone {
+    display: grid;
+    grid-column: 1;
+}
+
+#logo-scp {
+    width: 8rem;
+}
+
+.cabecalho h1 {
+    display: grid;
+    grid-column: 2;
+}
+
+.menu {
+    background-color: #2b2626;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 1rem;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #fffb02;
+}
+
+.conteudo {
+    flex: 3;
+}
+
+.principal {
+    display: flex;
+    padding: 1rem;
+    flex: 1;
+}
+
+.principal .artigo {
+    flex: 1 1 35%;
+}
+
+.artigo {
+    flex: 0 0 calc( 50% - 20px);
+}
+
+.artigos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1 1 35%;
+}
+
+.barra-lateral {
+    flex: 1;
+    background-color: #2b2626;
+    color: #fff;
+    text-align: center;
+}
+
+.barra-lateral ul {
+    list-style-type: none;
+}
+
+.rodape {
+    background-color: #141414;
+    color: #e90000;
+    text-align: center;
+    padding: 1rem;
+}
+
+iframe {
+    border: #fff 1rem solid;
+    border-radius: 10%;
+    margin: 2rem;
+    flex: 1 1 55%;
+    width: 460px;
+    height: 300px;
+}
+
+
+@media ( max-width: 991px ){
+    .principal {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    .barra-lateral iframe {
+        flex: 1 1 35%;
+        width: 260px;
+        height: 200px;
+    }
+    .barra-lateral {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media ( max-width: 576px ){
+    .principal, .barra-lateral {
+        font-size: 1rem;
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+    .barra-lateral iframe {
+        width: 120px;
+        height: 80px;
+    }
+}

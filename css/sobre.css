@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    align-items: center;
+}
+
+.icone {
+    display: grid;
+    grid-column: 1;
+}
+
+#logo-scp {
+    width: 8rem;
+}
+
+.cabecalho h1 {
+    display: grid;
+    grid-column: 2;
+}
+
+.menu {
+    background-color: #2b2626;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 1rem;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #fffb02;
+}
+
+.barra-lateral {
+    display: grid;
+    grid-column: 2;
+    background-color: #2b2626;
+    color: #fff;
+    text-align: center;
+}
+
+.barra-lateral ul {
+    list-style-type: none;
+}
+
+.rodape {
+    background-color: #141414;
+    color: #e90000;
+    text-align: center;
+    padding: 1rem;
+}
+
+.rodape p {
+    padding: 0;
+}
+
+.principal {
+   display: grid;
+   grid-template-columns: 90%, 10%;
+   min-width: 100vw;
+   min-height: 100vh;
+}
+
+iframe {
+    border: #fff 1rem solid;
+    border-radius: 10%;
+    margin: 2rem;
+}
+
+.informacoes {
+    display: grid;
+    grid-column: 1;
+}
+
+p, h2 {
+    padding: 20px;
+}
+
+.imagem-secao {
+    width: 60vw;
+    height: 60vh;
+    margin: 20px;
+    border: #000 2px solid;
+    border-radius: 5%;
+}
+
+
+.Safe {
+    background-color: #18EC1E;
+    border-radius: 2rem;
+    margin: 2rem;
+    border: #000 0.3rem solid;
+}
+
+
+.Titulo {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+}
+
+.Titulo h3 {
+    display: grid;
+    grid-column: 2;
+}
+
+.vejaMais {
+   padding: 1rem; 
+}
+
+
+.simbolo {
+    width: 8rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.Superior {
+    display: grid;
+    grid-column: 1;
+}
+
+.Euclid {
+    background-color: #FD6600;
+    border-radius: 2rem;
+    border: #000 0.3rem solid;
+    margin: 2rem;
+}
+
+
+
+.Keter {
+    background-color: #EC0000;
+    border-radius: 2rem;
+    border: #000 0.3rem solid;
+    margin: 2rem;
+}
+
+.Keter ul, .Thaumiel ul, .Euclid ul, .Safe ul, .Apollyon ul, .funcionarios {
+    padding: 3rem;
+}
+
+.Keter , .Thaumiel, .Euclid , .Safe , .Apollyon {
+    max-width: 60vw;
+}
+
+.Thaumiel {
+    background-color: aqua;
+    border-radius: 2rem;
+    border: #000 0.3rem solid;
+    margin: 2rem;
+}
+
+.Apollyon {
+    border-radius: 2rem;
+    border: #000 0.3rem solid;
+    margin: 2rem;
+}
+
+iframe {
+    border: #fff 1rem solid;
+    border-radius: 10%;
+    margin: 2rem;
+    flex: 1 1 55%;
+    width: 460px;
+    height: 300px;
+}
+
+@media ( max-width: 991px ){
+
+    body {
+        font-size: 1rem;
+    }
+
+    .imagem-secao {
+        height: 40vh;
+    }
+
+    .barra-lateral iframe {
+        width: 260px;
+        height: 200px;
+    }
+
+
+
+}
+
+@media ( max-width: 576px ){
+
+    body {
+        font-size: 0.7rem;
+    }
+
+    .imagem-secao {
+        height: 20vh;
+    }
+
+    .barra-lateral iframe {
+        width: 120px;
+        height: 80px;
+    }
+
+}
+
+
+
+
+
+
+
